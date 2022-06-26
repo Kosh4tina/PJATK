@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+Tue Jun 01 21:37:36 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0179-c914-d4f2-000016fcd573 
+on database directory /home/gattto113/Documents/pjatk/TPO7_PK_S19575/src/zad1/DerbyDB with class loader ParallelWebappClassLoader
+  context: TPO7_PK_S19575_war_exploded
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@69a3d1d
+ 
+Loaded from file:/home/gattto113/Documents/pjatk/TPO7_PK_S19575/out/artifacts/TPO7_PK_S19575_war_exploded/WEB-INF/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=15.0.1+9-18
+user.dir=/home/gattto113/Documents/pjatk/TPO7_PK_S19575/apache-tomcat-9.0.33/bin
+os.name=Linux
+os.arch=amd64
+os.version=5.11.0-7614-generic
+derby.system.home=/home/gattto113/Documents/pjatk/TPO7_PK_S19575/src/zad1
+Database Class Loader started - derby.database.classpath=''
