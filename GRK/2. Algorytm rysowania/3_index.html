@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+    function setup() {
+        createCanvas(750, 500);
+    }
+
+    var x0;
+    var y0;
+    var x1;
+    var y1;
+
+    function mousePressed() {
+        x0 = mouseX;
+        y0 = mouseY;
+    }
+
+    function mouseDragged() {
+        x1 = mouseX;
+        y1 = mouseY;
+        background(255);
+        noStroke();
+        fill('black');
+        ellipse(x0 - 3, y0 - 3, 10);
+        fill('black');
+        ellipse(x1 - 3, y1 - 3, 10);
+    }
+
+    function mouseReleased() {
+        background(255);
+        loadPixels();
+        drawLine();
+        updatePixels();
+    }
+
+    function drawLine() {
+        dx = x1 - x0;
+        dy = y1 - y0;
+        a = dy / dx;
+        b = y0 - a * x0;
+        sm = 0;
+        bg = 0;
+        if (x0 < x1) {
+            sm = x0;
+            bg = x1;
+        }
+        else if (x1 < x0) {
+            sm = x1;
+            bg = x0;
+        }
+        for (i = sm; i < bg; i++) {
+            setPixelColor(i, Math.round(i * a + b), 0);
+        }
+    }
+
+    function setPixelColor(x, y, color) {
+        idx = (y * width + x) * 4;
+        pixels[idx] = color;
+        pixels[idx + 1] = color;
+        pixels[idx + 2] = color;
+        pixels[idx + 3] = 255;
+    }
+</script>
+</body>
+</html>
