@@ -1,0 +1,63 @@
+ICON	Country	Capital	Population	
+AD	Andorra	Andorra la Vella	84000	
+AE	United Arab Emirates	Abu Dhabi	4975593		
+AF	Afghanistan	Kabul	29121286
+AG	Antigua and Barbuda	St. John's	86754	
+AI	Anguilla	The Valley	13254	
+AL	Albania	Tirana	2986952
+AM	Armenia	Yerevan	2968000
+AO	Angola	Luanda	13068161
+AQ	Antarctica		0
+AR	Argentina	Buenos Aires	41343201
+AS	American Samoa	Pago Pago	57881
+AT	Austria	Vienna	8205000
+AU	Australia	Canberra	21515754
+AW	Aruba	Oranjestad	71566
+AX	Aland Islands	Mariehamn	26711
+AZ	Azerbaijan	Baku	8303512
+BA	Bosnia and Herzegovina	Sarajevo	4590000
+BB	Barbados	Bridgetown	285653
+BD	Bangladesh	Dhaka	156118464
+BE	Belgium	Brussels	10403000
+BF	Burkina Faso	Ouagadougou	16241811
+BG	Bulgaria	Sofia	7148785
+BH	Bahrain	Manama	738004
+BI	Burundi	Bujumbura	9863117
+BJ	Benin	Porto-Novo	9056010
+BL	Saint Barthelemy	Gustavia	8450
+BM	Bermuda	Hamilton	65365
+BN	Brunei	Bandar Seri Begawan	395027
+BO	Bolivia	Sucre	9947418
+BQ	Bonaire, Saint Eustatius and Saba 		18012
+BR	Brazil	Brasilia	201103330
+BS	Bahamas	Nassau	301790
+BT	Bhutan	Thimphu	699847 
+BV	Bouvet Island		0
+BW	Botswana	Gaborone	2029307
+BY	Belarus	Minsk	9685000
+BZ	Belize	Belmopan	314522
+CA	Canada	Ottawa	33679000
+CC	Cocos Islands	West Island	628
+CD	Democratic Republic of the Congo	Kinshasa	70916439
+CF	Central African Republic	Bangui	4844927
+CG	Republic of the Congo	Brazzaville	3039126 
+CH	Switzerland	Bern	8484100
+CI	Ivory Coast	Yamoussoukro	21058798
+CK	Cook Islands	Avarua	21388
+CL	Chile	Santiago	16746491
+CM	Cameroon	Yaounde	19294149 
+CN	China	Beijing	1330044000
+CO	Colombia	Bogota	47790000
+CR	Costa Rica	San Jose	4516220 
+CU	Cuba	Havana	11423000 
+CV	Cabo Verde	Praia	508659 
+CW	Curacao	 Willemstad	141766 
+CX	Christmas Island	Flying Fish Cove	1500 
+CY	Cyprus	Nicosia	1102677 
+CZ	Czechia	Prague	10476000 
+DE	Germany	Berlin	81802257 
+DJ	Djibouti	Djibouti	740528 
+DK	Denmark	Copenhagen	5484000 
+DM	Dominica	Roseau	72813 
+DO	Dominican Republic	Santo Domingo	9823821 
+DZ	Algeria	Algiers	34586184 
