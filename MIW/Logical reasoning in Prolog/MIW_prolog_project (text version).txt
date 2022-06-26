@@ -1,0 +1,38 @@
+right_of(RightAppartmentId, LeftAppartmentId) :- RightAppartmentId is LeftAppartmentId + 1.
+left_of(LeftAppartmentId, RightAppartmentId) :- right_of(RightAppartmentId, LeftAppartmentId).
+
+next_to(Appartment1, Appartment2) :- right_of(Appartment1, Appartment2).
+next_to(Appartment1, Appartment2) :- left_of(Appartment1, Appartment2).
+
+find_zebra_owner(Floor, ZebraOwnerNationality) :-
+    Floor = [
+            appartment(1, Nationality1, Door1, Pet1, Car1, Drink1),
+			appartment(2, Nationality2, Doro2, Pet2, Car2, Drink2),
+            appartment(3, Nationality3, Door3, Pet3, Car3, Drink3),
+            appartment(4, Nationality4, Door4, Pet4, Car4, Drink4),
+            appartment(5, Nationality5, Door5, Pet5, Car5, Drink5)
+            ],
+    member(appartment(_, englishman, red, _, _, _), Floor),
+    member(appartment(_, spaniard, _, dog, _, _), Floor),    
+    member(appartment(_, _, green, _, _, cocoa), Floor),    
+    member(appartment(_, ukrainian, _, _, _, eggnog), Floor),    
+    member(appartment(AppartmentA, _, green, _, _, _), Floor),    
+    member(appartment(AppartmentB, _, ivory, _, _, _), Floor),   
+    right_of(AppartmentA, AppartmentB),
+    member(appartment(_, _, _, snails, oldsmobile, _), Floor),    
+    member(appartment(_, _, yellow, _, ford, _), Floor),    
+    member(appartment(3, _, _, _, _, milk), Floor),    
+    member(appartment(1, norwegian, _, _, _, _), Floor),    
+    member(appartment(AppartmentC, _, _, _, chevrolet, _), Floor),    
+    member(appartment(AppartmentD, _, _, fox, _, _), Floor),    
+    next_to(AppartmentC, AppartmentD),
+    member(appartment(AppartmentE, _, _, _, ford, _), Floor),    
+    member(appartment(AppartmentF, _, _, horse, _, _), Floor),  
+    next_to(AppartmentE, AppartmentF),
+    member(appartment(_, _, _, _, mercedes, orange_juice), Floor),    
+    member(appartment(_, japanese, _, _, volkswagen, _), Floor),    
+    member(appartment(AppartmentG, norwegian, _, _, _, _), Floor),
+	member(appartment(AppartmentH, _, blue, _, _, _), Floor),    
+	next_to(AppartmentG, AppartmentH),
+    member(appartment(_, norwegian, _, _, _, water), Floor),
+    member(appartment(_, ZebraOwnerNationality, _, zebra, _, _), Floor).
