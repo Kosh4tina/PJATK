@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+  <script>
+    function setup() {
+        createCanvas(750, 600);
+        noLoop();
+    }
+
+    function draw() {
+        //noprotect
+        background(100);       
+        let z = width;
+        
+        for (let x = 0; x < width; x++) {
+            z -= 1
+            let halfd = sqrt((width/2)*(width/2) + (height/2)*(height/2));
+            let dx = x - width / 2;
+            for (let y = 0; y < height; y++) {
+                let dy = y - height / 2;
+                let d = sqrt(dx*dx + dy*dy) * 2;
+                let circleColor = color((halfd - d) / halfd * 255, (d / halfd) * 255, 255 * max(0, y - z) / width);
+                set(x, y, circleColor);
+            }
+        }
+
+        updatePixels();
+    }
+</script>
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+</html>

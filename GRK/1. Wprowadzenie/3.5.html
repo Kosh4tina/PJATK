@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+  <script>
+    function setup() {
+        createCanvas(750, 600);
+        noLoop();
+    }
+
+    function draw() {
+        //noprotect
+        background(100);
+        for (let x = 0; x < width; x++) {
+            for (let y = 0; y < height; y++) {
+                set(x, y, x/width*256);
+            }
+        }
+        updatePixels();
+    }
+</script>
+<title>JS Bin</title>
+</head>
+<body>
+
+</body>
+</html>
