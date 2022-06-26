@@ -21,17 +21,29 @@ You must use provided depression dataset and attempt to predict if someone is de
 
 Dataset description (columns):
 >Surveyid Villeid
+
 >sex
+
 >Age
+
 >Married
+
 >Numberchildren educationlevel
+
 >totalmembers (in the family) gainedasset
+
 >durableasset saveasset
+
 >livingexpenses otherexpenses
+
 >incomingsalary incomingownfarm incomingbusiness
+
 >incomingnobusiness
+
 >incomingagricultural farmexpenses
+
 >laborprimary lastinginvestment
+
 >nolastinginvestmen
 
 depressed: [ Zero: No depressed] or [One: depressed] (Binary for target class) the main objective is to show statistic analysis and some data mining techniques.
