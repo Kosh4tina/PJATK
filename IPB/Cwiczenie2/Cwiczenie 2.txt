@@ -1,0 +1,11 @@
+Helpdesk
+
+Proces  udzielania wsparcia technicznego rozpoczyna się od wprowadzenia nowego zgłoszenia przez klienta. W tym momencie rozpoczyna się równolegle praca nad techniczną i biznesową stroną zgłoszenia.
+
+Pracownicy działu obsługi klienta weryfikują zgodność zgłoszenia z SLA. Jeśli zgłoszenie jest w zakresie SLA, nie jest konieczne podejmowanie dalszych działań.         
+
+Jeśli zgłoszenie nie jest w zakresie SLA, jego realizacja jest wyceniana i klientowi wystawiana jest faktura.
+
+Równolegle pracownicy działu    wsparcia technicznego  obsługują zgłoszenie. Zgłoszenie przydziela się jednemu z pracowników, który następnie sprawdza bazę wiedzy w poszukiwaniu podobnych problemów. Jeśli rozwiązanie problemu znajduje się w bazie wiedzy, jest ono użyte do rozwiązania problemu. W przeciwnym wypadku pracownik rozwiązuje problem samodzielnie i umieszcza rozwiązanie w bazie wiedzy.
+
+Na koniec klient otrzymuje informację o rozwiązaniu problemu wraz z ewentualną fakturą.
