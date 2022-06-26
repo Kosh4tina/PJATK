@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+</head>
+<body>
+<script>
+    function preload() {
+        img = loadImage("https://raw.githubusercontent.com/scikit-image/scikit-image/master/skimage/data/astronaut.png");
+    }
+
+    function setup() {
+        createCanvas(512, 512);
+        img.resize(256, 256);
+        img.filter("gray");
+
+        pixD = pixelDensity();
+
+        img.loadPixels();
+
+        let histogram = generateData(img);
+
+        for (let i = 0; i < 256; i++) {
+            const y = map(histogram[i], 0, max(histogram), 256, 0);
+            line(i, y, i, 256);
+        }
+
+        image(img, 0, 256);
+    }
+
+    function generateData(srcImg) {
+        let pixels = new Array(256);
+        pixels.fill(0);
+
+        for (let x = 0; x < srcImg.width; x++) {
+            for (let y = 0; y < srcImg.height; y++) {
+                for (let dx = 0; dx < pixD; dx++) {
+                    for (let dy = 0; dy < pixD; dy++) {
+                        let pos = 4 * ((y * pixD + dy) * srcImg.width * pixD + (x * pixD + dx));
+
+                        const r = srcImg.pixels[pos];
+
+                        pixels[r]++;
+                    }
+                }
+            }
+        }
+
+        pixels[0] = 0;
+
+        return pixels;
+    }
+</script>
+</body>
+</html>
